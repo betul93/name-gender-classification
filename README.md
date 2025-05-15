@@ -19,3 +19,23 @@ last_letter: Last character of the name (e.g., "Emma" → "a").
 name_length: Length of the name (e.g., "James" → 5).
 
 Performance Metric: Accuracy
+
+🚀 How to Run
+1. Prerequisites
+Python 3.x
+
+Google Colab or Jupyter Notebook
+
+Libraries:
+pandas, scikit-learn
+
+🔍 Technical Details
+Feature Engineering
+last_letter: Extracted using name[-1].lower().
+
+name_length: Calculated via len(name).
+
+Model Training
+Dataset split: 70% training, 30% testing (random_state=42).
+
+Categorical features encoded using DictVectorizer.
